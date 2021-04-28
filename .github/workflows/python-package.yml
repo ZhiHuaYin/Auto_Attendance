@@ -9,7 +9,7 @@ on:
   schedule:
     # 07:05 everyday in UTC+8, 23:05 everyday in UTC+0
     # 00:16 --> 16:15
-  - cron: '15 16 * * *'
+  - cron: '05 23 * * *'
 
 jobs:
   build:
