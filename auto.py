@@ -38,7 +38,7 @@ class DaKa(object):
             print("无法连接信网中心")
             exit(1)
         if res2 is None:
-            print("请检查账号密码是否正确")
+            print("请检查账号密码是否正确1")
             exit(1)
 
         regex = r'tokenId.*value="(?P<tokenId>\w+)".*account.*value="(?P<account>\w+)".*Thirdsys.*value="(' \
@@ -52,7 +52,7 @@ class DaKa(object):
                 "Thirdsys": re_result["Thirdsys"]
             }
         except:
-            print("请检查账号密码是否正确")
+            print("请检查账号密码是否正确2")
             exit(1)
         try:
             self.sess.post(self.validate_url, data=data2)
