@@ -102,8 +102,8 @@ class DaKa(object):
 def main(username, password):
     print("\n[Time] %s" % datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     print("🚌 打卡任务启动")
-    print('username is: ' %username)
-    print('password is: ' %password)
+    print('username is: %s' % username)
+    print('password is: %s' % password)
     spinner = Halo(text='Loading', spinner='dots')
     spinner.start('正在新建打卡实例...')
     dk = DaKa(username, password)
